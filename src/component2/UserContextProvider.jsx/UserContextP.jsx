@@ -17,7 +17,9 @@ const UserContextP = ({children}) => {
     const [logIn, setLogIn] = useState(b);
     
     const handle_click_unlike= async(data)=>{
-      const server = 'http://localhost:5000/api'
+      // const server = 'http://localhost:5000/api'
+      const server = 'https://social-media-backend-5od7.onrender.com/api'
+
       const post_id = data._id;
       const res = await fetch(`${server}/post-unlike`,
       {
@@ -48,7 +50,9 @@ const UserContextP = ({children}) => {
    }
   const handle_click = async(data)=>{
     
-    const server = 'http://localhost:5000/api'
+    // const server = 'http://localhost:5000/api'
+    const server = 'https://social-media-backend-5od7.onrender.com/api'
+
     const post_id = data._id;
     const res = await fetch(`${server}/post-like`,
     {

@@ -23,7 +23,9 @@ const Home = () => {
 
 
  const handle_click_unlike= async(data)=>{
-    const server = 'http://localhost:5000/api'
+    // const server = 'http://localhost:5000/api'
+    const server = 'https://social-media-backend-5od7.onrender.com/api'
+
     const post_id = data._id;
     const res = await fetch(`${server}/post-unlike`,
     {
@@ -55,7 +57,9 @@ const Home = () => {
  }
 const handle_click = async(data)=>{
  
-  const server = 'http://localhost:5000/api'
+  // const server = 'http://localhost:5000/api'
+  const server = 'https://social-media-backend-5od7.onrender.com/api'
+
   const post_id = data._id;
   const res = await fetch(`${server}/post-like`,
   {
@@ -93,7 +97,9 @@ const handle_click = async(data)=>{
   const navigate = useNavigate();
 
 
-  const server = 'http://localhost:5000/api'
+  // const server = 'http://localhost:5000/api'
+  const server = 'https://social-media-backend-5od7.onrender.com/api'
+
   useEffect(()=>{
                      async function calldata(){
                          const res = await fetch(`${server}/home`,

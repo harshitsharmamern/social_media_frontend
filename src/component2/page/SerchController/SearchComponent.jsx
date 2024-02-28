@@ -9,7 +9,9 @@ const SearchComponent = () => {
 
    const [All_user,set_all_user] = useState()
 
-  const server = 'http://localhost:5000/api'
+  // const server = 'http://localhost:5000/api'
+  const server = 'https://social-media-backend-5od7.onrender.com/api'
+
   useEffect(()=>{
     async function calldata(){
         const res = await fetch(`${server}/search-page`,

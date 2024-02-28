@@ -34,7 +34,8 @@ const Signup = () => {
     // You can handle the form submission logic here, e.g., sending data to the server
     console.log("Submitted credentials:", cred);
     try {
-      const server = 'http://localhost:5000/api'
+      // const server = 'http://localhost:5000/api'
+      const server = 'https://social-media-backend-5od7.onrender.com/api'
       const resp = await fetch(
         `${server}/user-signup`
         , {
@@ -80,7 +81,12 @@ const Signup = () => {
     // You can handle the form submission logic here, e.g., sending data to the server
     console.log("Submitted credentials:", cred);
     try {
-      const server = 'http://localhost:5000/api'
+      // const server = 'http://localhost:5000/api'
+      const server = 'https://social-media-backend-5od7.onrender.com/api'
+      // https://social-media-backend-5od7.onrender.com
+
+
+
       const resp = await fetch(
         `${server}/user-signin`
         , {

@@ -4,7 +4,9 @@ import UserPostCard from './UserPostCard'
 
 
 const Profile_page = () => {
-    const server = 'http://localhost:5000/api'
+    // const server = 'http://localhost:5000/api'
+    const server = 'https://social-media-backend-5od7.onrender.com/api'
+
     const image_profile = "https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png"
     const [user_data, set_user_data] = useState()
     const [user_posts, set_user_post] = useState()
@@ -148,7 +150,9 @@ const Profile_page = () => {
 }
 
 const Add_posts = () => {
-    const server = 'http://localhost:5000/api'
+    // const server = 'http://localhost:5000/api'
+    const server = 'https://social-media-backend-5od7.onrender.com/api'
+
 
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
