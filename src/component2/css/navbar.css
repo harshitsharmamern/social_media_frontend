@@ -1,0 +1,32 @@
+.navbar {
+    display: inline-block;
+    background-color: #eaaaaa;
+    width : 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+  }
+  
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-item {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px;
+  }
+  
+  .nav-item a:hover {
+    background-color: #ffffff;
+  }

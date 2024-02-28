@@ -1,0 +1,112 @@
+/* navbar.css */
+.navbar {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .navbar-menu.active {
+    max-height: 300px;
+  }
+  
+  .navbar-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-item {
+    margin-bottom: 10px;
+  }
+  
+  .navbar-link {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* .navbar-items {
+      flex-direction: column;
+    } */
+  
+    .navbar-item {
+      margin-bottom: 10px;
+    }
+ 
+  
+    .navbar-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 30px;
+      height: 20px;
+    }
+  
+    .navbar-toggle .bar {
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .navbar-toggle.active .bar:first-child {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .navbar-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar-toggle.active .bar:last-child {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .navbar-menu {
+      position: static;
+      max-height: initial;
+      overflow: visible;
+      transition: none;
+    }
+  
+    .navbar-link {
+      display: block;
+      padding: 10px;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  

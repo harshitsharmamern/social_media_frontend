@@ -1,0 +1,54 @@
+/* container.css */
+.container {
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid rgb(168, 185, 208);
+    padding: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    height: auto;
+    display: flex; /* Display the container as a flex container */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .container-element {
+    flex: 1; /* Make the container-element grow to fill the available space */
+  }
+  
+  .name-block {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    padding: 10px;
+    background-color: rgb(192, 192, 235);
+  }
+  
+  .description {
+    padding: 10px;
+    background-color: turquoise;
+  }
+  
+  .like-button {
+    margin-top: 10px;
+    align-self: flex-end; /* Align the like-button to the right */
+  }
+  
+  .like-button button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .like-button button:hover {
+    background-color: #45a049;
+  }
+  
